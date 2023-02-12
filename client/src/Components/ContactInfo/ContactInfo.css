@@ -1,0 +1,59 @@
+.info-container{
+    background: linear-gradient(to bottom right, #ffff00 0%, #ff9900 100%);
+    display: flex;
+    padding: 0 65px 0 65px;
+    justify-content: space-between;
+}
+.info{
+    display: flex;    
+}
+.icon{
+    margin-top: 25px;
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+}
+.info-header{
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.d2d_logo{
+    height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .info-container{
+        display: flex;
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        align-items: center !important;
+        padding: 0;
+    }
+    .info-header{
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        height: 10px;
+    }
+    .info{
+        height: 20px;
+        margin: 0;
+    }
+    .info-container h5{
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+    .info-container h4{
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+    .icon{
+        margin-top: 5px;
+        margin-right: 5px;
+        height: 15px;
+        width: 15px;
+    }
+}

@@ -1,0 +1,10 @@
+.App {
+  overflow-y: hidden !important;
+  width: 100% !important;
+  scroll-behavior: smooth;
+
+
+}
+.App::-webkit-scrollbar{
+    display: none;
+}

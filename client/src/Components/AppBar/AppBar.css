@@ -1,0 +1,25 @@
+.appbar-container{
+    background-color: rgba(0, 0, 0, 0.181);
+    min-height: 90px;
+    height: auto;
+    width: 100%;
+    position: fixed;
+}
+.appbar-containeroff{
+    background-color: rgba(0, 0, 0, 0.181);
+    min-height: 70px;
+    transition: 1s;
+    height: auto;
+    width: 100%;
+    position: fixed;
+}
+
+@media screen and (max-width:700px) {
+    .appbar-container{
+        min-height: 40px;
+        height: auto;
+        width: 100%;
+        position: fixed;
+
+    }
+}
