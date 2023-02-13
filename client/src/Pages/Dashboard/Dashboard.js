@@ -22,6 +22,7 @@ const DashBoard = () => {
     const [editAmount, setEditAmount] = useState('')
     const [date, setDate] = useState('')
     const [activeTab,setActiveTab]  = useState(1)
+    const [completed,setCompleted] = useState([])
 
     const tabState = (index)=>{
         setActiveTab(index)
@@ -78,6 +79,13 @@ const DashBoard = () => {
             }
         })
         setAcceptedOrders(acceptedPost)
+
+        const completedOrders = posts.filter((obj)=>{
+            if(obj.status === 'Completed'){
+                return {obj}
+            }
+        })
+        setCompleted(completedOrders)
 
 
 
@@ -136,7 +144,7 @@ const DashBoard = () => {
                     <img style={{ width: '72px' }} src={images.COMPLETED} alt="" />
                     <h4 style={{ margin: 0, textAlign: 'center' }} >Completed Orders</h4>
                     <div className='user-badge' >
-                        {posts.length}
+                        {completed.length}
                     </div>
                 </div>
                 <div className='detail-card' onClick={()=>tabState(3)} >
